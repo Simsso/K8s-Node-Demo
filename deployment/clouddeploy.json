@@ -11,6 +11,11 @@
         {
             "name": "gcr.io/cloud-builders/docker",
             "args": ["push", "gcr.io/${PROJECT_ID}/nodeapp:${SHORT_SHA}"]
+        },
+        {
+            "name": "gcr.io/${PROJECT_ID}/helm",
+            "args": ["install", "docs/examples/nginx"],
+            "env": ["CLOUDSDK_CONTAINER_CLUSTER=k8s-demo-cluster", "CLOUDSDK_COMPUTE_REGION=europe-west1-b", "TILLERLESS=true"]
         }
     ],
     "timeout": "240s"
