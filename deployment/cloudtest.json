@@ -9,5 +9,5 @@
             "args": ["test"]
         }
     ],
-    "timeout": "1500s"
+    "timeout": "120s"
 }
