@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nodeapp
-        image: gcr.io/k8s-demo-217708/nodeapp:{{ .Values.version }}
+        image: gcr.io/k8s-demo-217708/nodeapp:{{ .Values.version | replace "\"" "" }}
         resources:
           requests:
             cpu: 100m
