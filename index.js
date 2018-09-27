@@ -9,7 +9,8 @@ const app = express();
 app.get('/', (req, res) => {
     res.json({
         uuid: startUUID,
-        counter: ++accessCounter
+        counter: ++accessCounter,
+        version: 'v0.2.0'
     });
 });
 
