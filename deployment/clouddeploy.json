@@ -3,6 +3,14 @@
         {
             "name": "gcr.io/cloud-builders/docker",
             "args": ["build", "-t", "gcr.io/${PROJECT_ID}/nodeapp:latest", "-t", "gcr.io/${PROJECT_ID}/nodeapp:${SHORT_SHA}", "."]
+        },
+        {
+            "name": "gcr.io/cloud-builders/docker",
+            "args": ["push", "gcr.io/${PROJECT_ID}/nodeapp:latest"]
+        },
+        {
+            "name": "gcr.io/cloud-builders/docker",
+            "args": ["push", "gcr.io/${PROJECT_ID}/nodeapp:${SHORT_SHA}"]
         }
     ],
     "timeout": "240s"
