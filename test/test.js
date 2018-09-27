@@ -6,9 +6,9 @@ describe('Array', () => {
       assert.equal([1,2,3].indexOf(4), -1);
     });
   });
-  describe('#failing unit test', () => {
-      it('should pass (but fails)', () => {
-          assert.ok(false);
+  describe('#working unit test', () => {
+      it('should pass', () => {
+          assert.ok(true);
       })
   })
 });
