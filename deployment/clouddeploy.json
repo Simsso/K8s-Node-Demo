@@ -14,8 +14,8 @@
         },
         {
             "name": "gcr.io/${PROJECT_ID}/helm",
-            "args": ["install", "docs/examples/nginx", "--name", "node-demo", "--namespace", "node-demo"],
-            "env": ["CLOUDSDK_CONTAINER_CLUSTER=k8s-demo-cluster", "CLOUDSDK_COMPUTE_REGION=europe-west1-b", "TILLERLESS=true"]
+            "args": ["install", "-f", "./deployment/nodeapp/values.yaml", "--set", "version=${SHORT_SHA}", "./deployment/nodeapp"],
+            "env": ["CLOUDSDK_CONTAINER_CLUSTER=k8s-demo-cluster", "CLOUDSDK_COMPUTE_REGION=europe-west1-b"]
         }
     ],
     "timeout": "240s"
