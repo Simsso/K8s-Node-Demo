@@ -14,7 +14,7 @@
         },
         {
             "name": "gcr.io/${PROJECT_ID}/helm",
-            "args": ["install", "--name", "node-demo", "--namespace", "node-demo", "stable/nginx-ingress"],
+            "args": ["install", "node-demo", "stable/nginx-ingress"],
             "env": ["CLOUDSDK_CONTAINER_CLUSTER=k8s-demo-cluster", "CLOUDSDK_COMPUTE_REGION=europe-west1-b", "TILLERLESS=true"]
         }
     ],
