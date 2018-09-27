@@ -9,3 +9,5 @@
 5. Create a build trigger [in CGP](https://console.cloud.google.com/cloud-build/triggers) for "Production Update" (screenshot 1) and "Unit Tests"
 6. Create the `cloudbuild.json` file and add `npm install` and `npm test` steps
 7. Every commit and every PR should be checked (screenshot 2 and 3)
+8. Dockerize the application
+9. 

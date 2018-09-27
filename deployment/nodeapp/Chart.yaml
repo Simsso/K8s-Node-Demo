@@ -1,0 +1,8 @@
+name: nodeapp
+description: A demo Node.js application
+version: 0.1.0
+keywords:
+  - web
+home: https://github.com/Simsso/k8s-node-demo
+maintainers:
+  - name: timodenk
