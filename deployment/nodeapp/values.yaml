@@ -1,2 +1,2 @@
 version: "latest"
-replicaCount: 2
+replicaCount: 5
