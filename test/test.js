@@ -8,7 +8,7 @@ describe('Array', () => {
   });
   describe('#working unit test', () => {
       it('should pass', () => {
-          assert.ok(true);
+          assert.ok(false);
       })
   })
 });
